@@ -4,26 +4,34 @@ import java.util.Scanner;
 
 public class Homework_3 {
     public static void main(String[] args){
-        System.out.print("Enter task number(1-5): ");
-        String task = new Scanner(System.in).nextLine();
-        switch (task){
-            case "1":
-                FirstTask();
-                break;
-            case "2":
-                SecondTask();
-                break;
-            case "3":
-                ThirdTask();
-                break;
-            case "4":
-                FourthTask();
-                break;
-            case "5":
-                FifthTask();
-                break;
+        while (true){
+            System.out.print("Enter task number(1-5) or exit(6): ");
+            String task = new Scanner(System.in).nextLine();
+            switch (task){
+                case "1":
+                    FirstTask();
+                    break;
+                case "2":
+                    SecondTask();
+                    break;
+                case "3":
+                    ThirdTask();
+                    break;
+                case "4":
+                    FourthTask();
+                    break;
+                case "5":
+                    FifthTask();
+                    break;
+                case "6":
+                    System.exit(0);
+                default:
+                    System.out.println("Incorrect value");
+                    break;
+            }
         }
     }
+
     public static void FirstTask(){
         System.out.print("Enter any number: ");
         String number = new Scanner(System.in).nextLine();
@@ -38,6 +46,7 @@ public class Homework_3 {
             System.out.println("Incorrect value");
         }
     }
+
     public static void SecondTask(){
         System.out.print("Enter the outside temperature: ");
         String temperature = new Scanner(System.in).nextLine();
@@ -45,7 +54,7 @@ public class Homework_3 {
             int temp = Integer.parseInt(temperature);
             if (temp > -5){
                 System.out.println("Warm");
-            } else if (temp <= -5 && temp > -20) {
+            } else if (temp > -20) {
                 System.out.println("Normal");
             } else {
                 System.out.println("Cold");
@@ -54,6 +63,7 @@ public class Homework_3 {
             System.out.println("Incorrect value");
         }
     }
+
     public static void ThirdTask(){
         int num = 10;
         System.out.print("While loop: ");
@@ -66,6 +76,7 @@ public class Homework_3 {
             System.out.print(numfor * numfor + " ");
         }
     }
+
     public static void FourthTask(){
         int sum = 7;
         while (sum < 100){
@@ -73,6 +84,7 @@ public class Homework_3 {
             sum += 7 ;
         }
     }
+
     public static void FifthTask(){
         System.out.print("Enter a positive number: ");
         String number = new Scanner(System.in).nextLine();
