@@ -47,7 +47,7 @@ public class Homework_3 {
                 System.out.println("Warm");
             } else if (temp <= -5 && temp > -20) {
                 System.out.println("Normal");
-            }else {
+            } else {
                 System.out.println("Cold");
             }
         }catch (NumberFormatException e) {
@@ -67,11 +67,10 @@ public class Homework_3 {
         }
     }
     public static void FourthTask(){
-        int seven = 0;
         int sum = 7;
-        while (seven < 100){
-            seven = sum + seven;
-            System.out.print(seven + " ");
+        while (sum < 100){
+            System.out.print(sum + " ");
+            sum += 7 ;
         }
     }
     public static void FifthTask(){
